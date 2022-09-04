@@ -4,63 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <h2>Drag and Drop</h2>
     <h3>Place the logo in the appropriate box</h3>
 
-    <div class="flex-container">
-        <img id="ila" src="/assets/ila.png">
+
+    <div class="ila-container">
+    <img id="ila" src="assets/ila.png">
+    <div class="curry-container">
+        
+        <div class="curry">
+       
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+
+        <div class="curry">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <div class="curry">
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <div class="curry">
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="curry">
+            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="curry"></div>
+
     </div>
 
-    <div style="display:inline-block">
-      <div>
-        <label>Instagram</label>
-      </div>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    </div>
+    <div class="curry-container2">
 
-    <div style="display:inline-block">
-      <div>
-        <label>Whatsapp</label>
-      </div>
-      <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    </div>
+        <div class="curry2">
+            <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="curry2">
+            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="curry2">
+            <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="chor">
+            <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
 
-    <div style="display:inline-block">
-      <div>
-        <label>Google</label>
-      </div>
-      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </div>
+   
 
-    <div style="display:inline-block">
-      <div>
-        <label>Facebook</label>
-      </div>
-      <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>
+   
+
+<div>
+    <button id="yo" onClick="verify()"> Verify Answer </button>
+    <button id="showAns" onClick="showAns()" style="display: none;"> Show Answer </button>
+    <div >
+        <h1 id="myDIV"></h1>
     </div>
+    <h2 id="ans_msg"></h2>
+  </div>
 
-    <div>
-      <button id="yo" onClick="verify()"> Verify Answer </button>
-      <button id="showAns" onClick="showAns()" style="display: none;"> Show Answer </button>
-      <h2 id="msg"></h2>
-      <h2 id="ans_msg"></h2>
-    </div>
+  <h5>Choices Pool</h5>
+  <div style="display:block" ondrop="drop(event)" ondragover="allowDrop(event)" id="pool">
 
-    <h5>Choices Pool</h5>
-    <div style="display:block" ondrop="drop(event)" ondragover="allowDrop(event)" id="pool">
-
-      <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/37a5557e-96d0-11e6-a0ca-00163ec9f5fa/3724657053/facebook-for-windows-10-logo.png" draggable="true" ondragstart="drag(event)" id="drag1" data-ans="div4" width="50" height="50">
-      <img src="https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg" draggable="true" ondragstart="drag(event)" id="drag2" data-ans="div3" width="50" height="50">
-      <img src="https://img.utdstc.com/icons/whatsapp-wallpaper-android.png:s" draggable="true" ondragstart="drag(event)" id="drag3" data-ans="div2" width="50" height="50">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/100px-Instagram_logo_2016.svg.png" draggable="true" ondragstart="drag(event)" id="drag4" data-ans="div1" width="50" height="50">
-    </div>
+    <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/37a5557e-96d0-11e6-a0ca-00163ec9f5fa/3724657053/facebook-for-windows-10-logo.png" draggable="true" ondragstart="drag(event)" id="drag1" data-ans="div4" width="50" height="50">
+    <img src="https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg" draggable="true" ondragstart="drag(event)" id="drag2" data-ans="div3" width="50" height="50">
+    <img src="https://img.utdstc.com/icons/whatsapp-wallpaper-android.png:s" draggable="true" ondragstart="drag(event)" id="drag3" data-ans="div2" width="50" height="50">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/100px-Instagram_logo_2016.svg.png" draggable="true" ondragstart="drag(event)" id="drag4" data-ans="div1" width="50" height="50">
+  </div>
 
 
 
 </body>
+
 </html>
