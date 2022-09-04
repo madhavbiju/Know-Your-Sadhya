@@ -46,8 +46,63 @@ var attempt = 0;
           document.getElementById("pool").appendChild(c[0]);
         }
 
+        var c = document.getElementById('div5').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div5') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div6').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div6') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div7').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div7') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div8').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div8') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div9').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div9') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div10').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div10') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div11').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div11') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div12').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div12') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
+        var c = document.getElementById('div13').childNodes;
+        if (c[0] != null && c[0].dataset.ans != 'div13') {
+          ans = false;
+          document.getElementById("pool").appendChild(c[0]);
+        }
+
         if (ans) {
-            document.write('<h1>Correct</h1>')
+          var x = document.getElementById("myDIV");
+          x.innerHTML = "Correct!";
         } 
         
         else {

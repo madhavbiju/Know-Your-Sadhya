@@ -62,7 +62,7 @@ body{
         margin: 1%;
         border: 1px solid black;
         height: 90%;
-        width: 50%;
+        width: 100%;
     }
 
     #div1,
@@ -73,7 +73,11 @@ body{
     #div6,
     #div7,
     #div8,
-    #div9 {
+    #div9,
+    #div10,
+    #div11,
+    #div12,
+    #div13{
         margin: 10px;
         border: 1px solid black;
         width: 50%;
