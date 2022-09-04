@@ -9,9 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Drag and Drop</h2>
-    <h3>Place the logo in the appropriate box</h3>
-
 
     <div class="ila-container">
     <img id="ila" src="assets/ila.png">
@@ -64,7 +61,9 @@
    
 
 <div>
-    <button id="yo" onClick="verify()"> Verify Answer </button>
+    <div class="buttonContainer">
+    <button class="btn" id="yo" onClick="verify()"> ഉണ്ടാല്ലോ? </button>
+    </div>
     <button id="showAns" onClick="showAns()" style="display: none;"> Show Answer </button>
     <div >
         <h1 id="myDIV"></h1>
@@ -72,8 +71,8 @@
     <h2 id="ans_msg"></h2>
   </div>
 
-  <h5>Choices Pool</h5>
-  <div style="display:block" ondrop="drop(event)" ondragover="allowDrop(event)" id="pool">
+  <h5>സദ്യകൂട്ട്</h5>
+  <div class="choicesContainer"  ondrop="drop(event)" ondragover="allowDrop(event)" id="pool">
 
     <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/37a5557e-96d0-11e6-a0ca-00163ec9f5fa/3724657053/facebook-for-windows-10-logo.png" draggable="true" ondragstart="drag(event)" id="drag1" data-ans="div4" width="50" height="50">
     <img src="https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg" draggable="true" ondragstart="drag(event)" id="drag2" data-ans="div3" width="50" height="50">
