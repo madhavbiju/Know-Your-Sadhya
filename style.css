@@ -35,8 +35,8 @@ body{
         position: absolute;
         justify-content: left;
         width: 80%;
-        height: 40%;
-        margin-top: 35%;
+        height: 20%;
+        margin-top: 37%;
     }
 
     .curry{
@@ -53,18 +53,17 @@ body{
         align-items: center;
         justify-content: center;
         margin: 1%;
-        height: 50%;
+        height: 90%;
         width: 11%;
     }
 
     .chor{
-        padding-left: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 1%;
-        height: 90%;
-        width: 30%;
+        height: 150%;
+        width: 50%;
     }
 
     #div1,
@@ -80,13 +79,11 @@ body{
     #div11,
     #div12,
     #div13{
-        border: 1px solid black;
+
         margin: 10px;
         width: 100%;
         height: 50%
     }
-
-   
 
     .curry-container1 {
         height: 70%;
