@@ -38,6 +38,10 @@ h4{
    text-align: center;
 }
 
+p{
+    text-align: center;
+ }
+
 .footer {
     position: fixed;
     left: 0;
