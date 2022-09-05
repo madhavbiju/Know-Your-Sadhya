@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Play - Know Your Sadhya</title>
+</head>
+<body>
+
+    <div class="ila-container">
+    <img id="ila" src="assets/ila.png">
+    <div class="curry-container">
+        
+        <div class="curry">
+             <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <div class="curry">
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <div class="curry">
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry">
+            <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+
+    </div>
+
+    <div class="curry-container2">
+
+        <div class="curry2">
+            <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry2">
+            <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="curry2">
+            <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="chor">
+            <div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+    </div>
+   
+
+
+</div>
+   
+
+<div>
+    <div class="buttonContainer">
+    <button class="btn" id="yo" onClick="verify()"> ഉണ്ടാല്ലോ? </button>
+    </div>
+    <button id="showAns" onClick="showAns()" style="display: none;"> Show Answer </button>
+    <div >
+        <h1 id="myDIV"></h1>
+    </div>
+    <h2 id="ans_msg"></h2>
+  </div>
+
+  <h5>സദ്യകൂട്ട്</h5>
+  <div class="choicesContainer"  ondrop="drop(event)" ondragover="allowDrop(event)" id="pool">
+
+    <img src="assets/rice.png" draggable="true" ondragstart="drag(event)" id="drag1" data-ans="div13" width="50" height="50">
+    <img src="assets/banana.png" draggable="true" ondragstart="drag(event)" id="drag2" data-ans="div10" width="50" height="50">
+    <img src="assets/mangaachar.png" draggable="true" ondragstart="drag(event)" id="drag3" data-ans="div2" width="50" height="50">
+    <img src="assets/olan.png" draggable="true" ondragstart="drag(event)" id="drag4" data-ans="div6" width="50" height="50">
+    <img src="assets/pappadam.png" draggable="true" ondragstart="drag(event)" id="drag5" data-ans="div12" width="50" height="50">
+    <img src="assets/aviyal.png" draggable="true" ondragstart="drag(event)" id="drag6" data-ans="div9" width="50" height="50">
+    <img src="assets/upp.png" draggable="true" ondragstart="drag(event)" id="drag7" data-ans="div1" width="50" height="50">
+    <img src="assets/sarkara-upperi.png" draggable="true" ondragstart="drag(event)" id="drag8" data-ans="div11" width="50" height="50">
+    <img src="assets/inji-thayir.png" draggable="true" ondragstart="drag(event)" id="drag9" data-ans="div5" width="50" height="50">
+    <img src="assets/injiachar.png" draggable="true" ondragstart="drag(event)" id="drag10" data-ans="div3" width="50" height="50">
+    <img src="assets/thoran.png" draggable="true" ondragstart="drag(event)" id="drag11" data-ans="div8" width="50" height="50">
+    <img src="assets/naaranga-achaar.png" draggable="true" ondragstart="drag(event)" id="drag12" data-ans="div4" width="50" height="50">
+    <img src="assets/pachadi.png" draggable="true" ondragstart="drag(event)" id="drag13" data-ans="div7" width="50" height="50">
+    </div>
+
+
+
+</body>
+
+</html>
